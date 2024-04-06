@@ -1,0 +1,75 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: larger;
+    width: 25%;
+    height: auto;
+
+    .title {
+        font-weight: 600;
+        font-size: larger;
+    }
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9f9dd5;
+    height: 98vh;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+
+
+    .text-fields {
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid grey;
+        outline: none;
+        font-weight: 700;
+        font-size: medium;
+
+        &::placeholder {
+            opacity: 0.8;
+        }
+    }
+
+}
+
+button {
+    cursor: pointer;
+    background-color: #9f9dd5;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: medium;
+
+    &.google-signIn {
+        background-color: rgb(183, 109, 109);
+    }
+
+    &.google-signIn:hover {
+        background-color: rgb(236, 103, 103);
+        color: #fff;
+    }
+
+    &.sign-out {
+        border: 1px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        background-color: #7975e4;
+    }
+}
